@@ -1,0 +1,7 @@
+{
+  "name": "myJournal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
