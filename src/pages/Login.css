@@ -1,1 +1,8 @@
-#birdlogo {width: 50%; height:40px;}
+#birdlogo {display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    position: center; 
+    size:40px; 
+    width: 20%;
+    height: auto;}
+

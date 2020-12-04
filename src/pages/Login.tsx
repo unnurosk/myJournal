@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Twitter } from 'capacitor-twitter';
 import logo from './logo.png';
 import birdlogo from './twitter.png';
-import './Home.css';
+import './Login.css';
 const twitter = new Twitter();
 const INITIAL_STATE = {
   loggedIn: false,
