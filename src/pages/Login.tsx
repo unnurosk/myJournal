@@ -2,6 +2,9 @@ import { IonContent, IonText, IonRow, IonCol, IonHeader, IonPage, IonTitle, IonT
 import React, { Component } from 'react';
 //import './Login.css';
 import { Twitter } from 'capacitor-twitter';
+import logo from './logo.png';
+import birdlogo from './twitter.png';
+import './Home.css';
 const twitter = new Twitter();
 const INITIAL_STATE = {
   loggedIn: false,
@@ -41,6 +44,10 @@ class Login extends Component {
         <IonHeader>
           <IonToolbar color="primary">
             <IonTitle>myJournal</IonTitle>
+            <IonToolbar>
+          <img src={logo} id="logo"/>
+          <IonTitle id="title" size="large">myJournal</IonTitle>
+        </IonToolbar>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
@@ -49,7 +56,8 @@ class Login extends Component {
           <IonRow>
             <IonCol className="text-center">
               <IonText className="title">
-                Login to myJournal using twitter.
+                <img src={birdlogo} id="birdlogo"/>
+                Login to myJournal using twitter. 
               </IonText>
             </IonCol>
           </IonRow>
