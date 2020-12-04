@@ -40,31 +40,21 @@ class Login extends Component {
       <IonPage>
         <IonHeader>
           <IonToolbar color="primary">
-            <IonTitle>Ionic React App</IonTitle>
+            <IonTitle>myJournal</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
           <IonRow>
-            <IonCol className="text-center">
-              <IonImg className="title-img" src="assets/capacitor.png" ></IonImg>
-            </IonCol>
           </IonRow>
           <IonRow>
             <IonCol className="text-center">
               <IonText className="title">
-                Twitter Login in Capacitor app
+                Login to myJournal using twitter.
               </IonText>
             </IonCol>
           </IonRow>
-          <IonRow>
-            <IonCol className="text-center">
-              <IonText className="text-center">
-                By Enappd Team
-              </IonText>
-            </IonCol>
-          </IonRow>
-
-          <IonButton className="login-button" onClick={() => this.signIn()} expand="full" fill="solid" color="primary">
+          
+          <IonButton className="login-button" routerLink="/home"  expand="full" fill="solid" color="primary">
             Login with Twitter
         </IonButton>
         </IonContent>
